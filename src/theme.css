@@ -55,19 +55,31 @@ img[src$="aborted.png"],  img[src$="aborted.gif"],  img[src$="aborted_anime.gif"
     -moz-border-radius: 50%;
     padding: 0;
     border-radius: 50%;
-    background: rgba(0,0,0,0.1)
+    background: #999 !important;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #cccccc 0%, #999999 100%) !important;
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #cccccc, #999999) !important;
+    background-image: radial-gradient(circle at 3px 3px, #cccccc 0%, #999999 100%) !important;
 }
 
 img[src*="blue.png"], img[src*="blue_anime.gif"] {
-    background: #56a556 !important;
+    background: #397439 !important;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #72d472 0%, #397439 100%) !important;
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #72d472, #397439) !important;
+    background-image: radial-gradient(circle at 3px 3px, #72d472 0%, #397439 100%) !important;
 }
 
 img[src*="yellow.png"], img[src*="yellow_anime.gif"] {
-    background: #FFFB00 !important;
+    background: #f0ad4e !important;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #f0ad4e 0%, #d58512 100%) !important;
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #f0ad4e, #d58512) !important;
+    background-image: radial-gradient(circle at 3px 3px, #f0ad4e 0%, #d58512 100%) !important;
 }
 
 img[src*="red.png"], img[src*="red_anime.gif"] {
-    background: #FF7373 !important;
+    background: #ac2925 !important;
+    background-image: -moz-radial-gradient(3px 3px 45deg, circle cover, #d9534f 0%, #ac2925 100%) !important;
+    background-image: -webkit-radial-gradient(3px 3px, circle cover, #d9534f, #ac2925) !important;
+    background-image: radial-gradient(circle at 3px 3px, #d9534f 0%, #ac2925 100%) !important;
 }
 
 img[src*="_anime.gif"] {
@@ -85,7 +97,7 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 }
 
 .build-health-icon {
-    padding: 0px;
+    padding: 0;
 }
 
 #executors tr:not(:first-of-type) > th.pane {
@@ -127,7 +139,7 @@ img[src$="images/32x32/aborted.png"],  img[src$="images/32x32/aborted.gif"],  im
     width: 0;
     height: 24px;
     padding: 0 24px 0 0;
-  margin-left: 5px;
+    margin-left: 5px;
 }
 
 img[src$="images/48x48/blue.png"],     img[src$="images/48x48/blue.gif"],     img[src$="images/48x48/blue_anime.gif"],
