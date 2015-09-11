@@ -5,6 +5,16 @@ body, table, form, input, td, th, p, textarea, select {
     font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
 }
 
+a,
+a:visited {
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #036;
+}
+
+
 /* Logo */
 .logo {
     background: url('img/headshot.svg') no-repeat;
@@ -16,7 +26,8 @@ body, table, form, input, td, th, p, textarea, select {
     content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
 }
 
-/* color blocks */
+
+/* Balls */
 @-webkit-keyframes inprogress {
     0% {
         opacity: 1;
