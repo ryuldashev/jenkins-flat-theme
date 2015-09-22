@@ -54,3 +54,28 @@ a:hover {
 .model-link {
   padding-left: 0.5em;
 }
+
+#description-link {
+  img {
+    line-height: 1.6em;
+    padding-right: 0.5em;
+  }
+}
+
+.CodeMirror-scroll {
+  border-color: #888 !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.pane-header {
+  .expand,
+  .collapse {
+    margin-left: 0;
+    padding-left: 0.3em;
+
+    img {
+      line-height: 1.6em;
+    }
+  }
+}

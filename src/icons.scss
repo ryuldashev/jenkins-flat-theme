@@ -69,22 +69,18 @@ img[src*="flags.png"] {
 
 .icon-new-package:before {
   @extend .fa-archive:before;
-//  color: #ac2925;
 }
 
 .icon-user:before {
   @extend .fa-users:before;
-//  color: #ac2925;
 }
 
 .icon-notepad:before {
   @extend .fa-list-alt:before;
-//  color: #ac2925;
 }
 
 .icon-setting:before {
   @extend .fa-cog:before;
-//  color: #ac2925;
 }
 
 .icon-collapse:before {
