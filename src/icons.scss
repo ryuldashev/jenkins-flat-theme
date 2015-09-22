@@ -1,2 +1,28 @@
 $fa-font-path:"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome";
+
+.icon-sm,
+.icon-md,
+.icon-lg {
+    @extend .fa;
+    content: "";
+}
+.icon-sm {
+    font-size: 1em;
+}
+.icon-md {
+    font-size: 2em;
+}
+.icon-lg {
+    font-size: 3em;
+}
+
+.icon-blue:before {
+    @extend .fa-circle:before;
+    color: #397439;
+}
+
+.icon-health-80plus:before {
+    @extend .fa-star:before;
+    color: green;
+}
