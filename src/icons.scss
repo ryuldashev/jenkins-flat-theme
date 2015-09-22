@@ -1,28 +1,137 @@
-$fa-font-path:"https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts";
+$fa-font-path: "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts";
 @import "../node_modules/font-awesome/scss/font-awesome";
 
 .icon-sm,
 .icon-md,
-.icon-lg {
-    @extend .fa;
-    content: "";
+.icon-lg,
+.icon-xlg,
+img[src*="atom.gif"],
+img[src*="flags.png"] {
+  @extend .fa;
+  content: "";
 }
+
 .icon-sm {
-    font-size: 1em;
+  font-size: 0.8em;
 }
+
 .icon-md {
-    font-size: 2em;
+  font-size: 1.7em;
 }
+
 .icon-lg {
-    font-size: 3em;
+  font-size: 2.5em;
+}
+
+.icon-xlg {
+  font-size: 3em;
 }
 
 .icon-blue:before {
-    @extend .fa-circle:before;
-    color: #397439;
+  @extend .fa-circle:before;
+  color: #397439;
+}
+
+.icon-red:before {
+  @extend .fa-circle:before;
+  color: #ac2925;
+}
+
+.icon-nobuilt:before,
+.icon-disabled:before {
+  @extend .fa-circle:before;
+  color: #999;
 }
 
 .icon-health-80plus:before {
-    @extend .fa-star:before;
-    color: green;
+  @extend .fa-star:before;
+  color: #ffc107;
+}
+
+.icon-health-60to79:before {
+  @extend .fa-star:before;
+  color: #999;
+}
+
+.icon-health-40to59:before {
+  @extend .fa-cloud:before;
+  color: #999;
+}
+
+.icon-health-20to39:before {
+  @extend .fa-cloud:before;
+  color: #ac2925;
+}
+
+.icon-clock:before {
+  @extend .fa-play-circle:before;
+}
+
+.icon-new-package:before {
+  @extend .fa-archive:before;
+//  color: #ac2925;
+}
+
+.icon-user:before {
+  @extend .fa-users:before;
+//  color: #ac2925;
+}
+
+.icon-notepad:before {
+  @extend .fa-list-alt:before;
+//  color: #ac2925;
+}
+
+.icon-setting:before {
+  @extend .fa-cog:before;
+//  color: #ac2925;
+}
+
+.icon-collapse:before {
+  @extend .fa-angle-up:before;
+}
+
+.icon-expand:before {
+  @extend .fa-angle-down:before;
+}
+
+.icon-help:before {
+  @extend .fa-question-circle:before;
+}
+
+.icon-text:before {
+  @extend .fa-file-text-o:before;
+}
+
+.icon-up:before {
+  @extend .fa-arrow-circle-up:before;
+}
+
+.icon-search:before {
+  @extend .fa-search:before;
+}
+
+.icon-folder:before {
+  @extend .fa-folder-open:before;
+}
+
+.icon-edit-delete:before {
+  @extend .fa-trash-o:before;
+}
+
+.icon-clipboard:before {
+  @extend .fa-clipboard:before;
+}
+
+.icon-package:before {
+  @extend .fa-archive:before;
+}
+
+img[src*="atom.gif"]:before {
+  @extend .fa-rss-square;
+  color: #e65100;
+}
+
+img[src*="flags.png"]:before {
+  @extend .fa-flag;
 }

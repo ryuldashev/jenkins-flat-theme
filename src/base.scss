@@ -1,31 +1,56 @@
 body, table, form, input, td, th, p, textarea, select {
-    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+  font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
 }
 
 a,
 a:visited {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 a:hover {
-    color: #036;
+  color: #036;
 }
-
 
 /* Logo */
 .logo {
-    background: url('img/headshot.svg') no-repeat;
-    background-size: contain;
-    width: 330px;
+  background: url('img/headshot.svg') no-repeat;
+  background-size: contain;
+  width: 330px;
 }
 
-#jenkins-head-icon
-{
-    display: none;
+#jenkins-head-icon {
+  display: none;
 }
 
-#jenkins-home-link
-{
-    width: 160px;
-    height: 40px;
+#jenkins-home-link {
+  width: 160px;
+  height: 40px;
+}
+
+/* Main menu */
+#side-panel {
+  .task {
+
+    img {
+      font-size: 18px;
+      width: 18px !important;
+      height: 18px !important;
+      margin-right: 5px !important;
+    }
+
+    .task-link {
+      font-size: 14px;
+    }
+  }
+}
+
+/* Built log */
+.build-health-link {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+
+/* Main Panel */
+.model-link {
+  padding-left: 0.5em;
 }
