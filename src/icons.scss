@@ -27,20 +27,29 @@ img[src*="flags.png"] {
   font-size: 3em;
 }
 
-.icon-blue:before {
+.icon-blue:before,
+.icon-blue-anime:before {
   @extend .fa-circle:before;
   color: #397439;
 }
 
-.icon-red:before {
+.icon-red:before,
+.icon-red-anime:before {
   @extend .fa-circle:before;
   color: #ac2925;
 }
 
 .icon-nobuilt:before,
+.icon-nobuilt-anime:before,
 .icon-disabled:before {
   @extend .fa-circle:before;
   color: #999;
+}
+
+.icon-blue-anime,
+.icon-red-anime,
+.icon-nobuilt-anime {
+  animation: inprogress 2s infinite linear;
 }
 
 .icon-health-80plus:before {
