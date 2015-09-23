@@ -12,19 +12,34 @@ img[src*="flags.png"] {
 }
 
 .icon-sm {
-  font-size: 0.8em;
+  font-size: 14px;
+
+  &.icon-health-40to59:before,
+  &.icon-health-20to39:before {
+    font-size: 12px;
+  }
 }
 
 .icon-md {
-  font-size: 1.7em;
+  font-size: 22px;
+
+  &.icon-health-40to59:before,
+  &.icon-health-20to39:before {
+    font-size: 20px;
+  }
 }
 
 .icon-lg {
-  font-size: 2.5em;
+  font-size: 28px;
+
+  &.icon-health-40to59:before,
+  &.icon-health-20to39:before {
+    font-size: 26px;
+  }
 }
 
 .icon-xlg {
-  font-size: 3em;
+  font-size: 36px;
 }
 
 .icon-blue:before,
