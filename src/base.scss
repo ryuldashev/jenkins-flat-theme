@@ -15,7 +15,8 @@ a:hover {
 
 /* Logo */
 .logo {
-  background: url('img/headshot.svg') no-repeat;
+  background-image: inline-image('img/headshot.svg');
+  background-repeat: no-repeat;
   background-size: contain;
   width: 330px;
 }
