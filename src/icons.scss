@@ -1,4 +1,5 @@
 $fa-font-path: "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/fonts";
+@import "colors";
 @import "../node_modules/font-awesome/scss/font-awesome";
 
 .icon-sm,
@@ -45,7 +46,7 @@ img[src*="flags.png"] {
 .icon-blue:before,
 .icon-blue-anime:before {
   @extend .fa-circle:before;
-  color: #397439;
+  color: $color-green;
 }
 
 .icon-red:before,

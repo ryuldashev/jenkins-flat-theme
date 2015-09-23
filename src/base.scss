@@ -1,5 +1,7 @@
+@import "colors";
+
 body, table, form, input, td, th, p, textarea, select {
-  font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+  font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif !important;
 }
 
 a,
@@ -27,6 +29,17 @@ a:hover {
   height: 40px;
 }
 
+#header {
+  .login {
+    font-size: 0;
+
+    a {
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+  }
+}
+
 /* Main menu */
 #side-panel {
   .task {
@@ -36,6 +49,7 @@ a:hover {
       width: 18px !important;
       height: 18px !important;
       margin-right: 5px !important;
+      color: $color-ashes;
     }
 
     .task-link {
@@ -57,13 +71,13 @@ a:hover {
 
 #description-link {
   img {
-    line-height: 1.6em;
-    padding-right: 0.5em;
+    line-height: 1.2em;
+    margin-right: 0.3em;
   }
 }
 
 .CodeMirror-scroll {
-  border-color: #888 !important;
+  border-color: $color-ashes !important;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -75,7 +89,55 @@ a:hover {
     padding-left: 0.3em;
 
     img {
-      line-height: 1.6em;
+      line-height: 1.2em;
     }
+  }
+}
+
+#jenkins .yui-button button {
+  font-weight: normal !important;
+  border-radius: 2px !important;
+}
+
+#projectstatus {
+  .icon-clock {
+    color: $color-green;
+
+    &:hover {
+      color: $color-ashes;
+    }
+  }
+}
+
+#main-panel {
+  table {
+    .icon-xlg {
+      color: $color-ashes;
+    }
+  }
+}
+
+
+#searchform {
+
+  input {
+    background: #fff;
+    box-shadow: none;
+    border-radius: 2px;
+    border: none;
+  }
+
+    &:before {
+      @extend .fa;
+      @extend .fa-search;
+
+      position: relative;
+      left: 16px;
+      font-size: 12px !important;
+      color: $color-ashes !important;
+    }
+
+  .icon-help {
+    color: #fff;
   }
 }
